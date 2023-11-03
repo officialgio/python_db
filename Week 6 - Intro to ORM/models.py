@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String,ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy import Sequence
 
-class Address(Base):
+class Address(Base): # address is a subclass of Base 
     __tablename__ = 'address'
     id = Column(Integer, primary_key=True)
     email_address = Column(String, nullable=False)
